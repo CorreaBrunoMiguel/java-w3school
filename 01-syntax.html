@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA - Syntax</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Java Syntax</h1>
+    <hr>
+    <h2>Syntax</h2>
+    <p>
+        In the previous chapter, we create a Java file called <b class="red">Main.java</b>, and we used the following code to print 'Hello World' to the screen:
+    </p>
+    <div class="exemplo">
+        <h3>Main.java</h3>
+        <fieldset>
+            <pre>
+                public class Main {
+                    public static void main(String[] args) {
+                        System.out.println("Hello World");
+                    }
+                }
+            </pre>
+        </fieldset>
+    </div>
+    <h4>Example explained</h4>
+    <p>
+        Every line of code that runs in Java muste be inside a <b class="red">class</b>. In our example, we named the class <b>Main</b>. A class should always start with a uppercase first letter. <br><br>
+        <b>Note:</b> Java is case-sensitive: "MyClass" and "myclass" has different meaning. <br><br>
+        The name of the java file <b>must match</b> the class name. When saving the file, save it using the class name and ".java" to the end of the filename. To run the example above on your computer, make sure that Java is properly installed.
+    </p>
+    <hr>
+    <h2>The main Method</h2>
+    <p>
+        The <b class="red">main()</b> method is required and you will see it in every Java program:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <pre>
+                public static void main(String[] args)
+            </pre>
+        </fieldset>
+    </div>
+    <p>
+        Any code inside the <b class="red">main()</b> method will be executed. Don't worry about the keywords before and after main. You will get to know them bit by bit while reading this tutorial. <br><br>
+        For now, just remember that every Java program has a <b class="red">class</b> name wich must match the filename, and that every program must contain the <b class="red">main()</b> method.
+    </p>
+    <hr>
+    <h2>System.out.ptintln()</h2>
+    <p>
+        Inside the <b class="red">main()</b> method, we can use the <b class="red">println()</b> method to print a line of text to the screen:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <pre>
+                public static void main(String[] args) {
+                    System.out.println("Hello World");
+                }
+            </pre>
+        </fieldset>
+    </div>
+    <div class="nota">
+        <b>Note: </b>The curly braces <b class="red">{}</b> marks the beginning and the end o block code. <br><br>
+        <b class="red">System</b> is a built-in Java class that contains useful members, such as <b class="red">out</b>, which is short for 'output'. The <b class="red">println()</b> method, short for 'print line', is used to print a value to the screen (or a file). <br><br>
+        Don't worry too much about <b class="red">System</b>, <b class="red">out</b> and <b class="red">println()</b>. Just know that you need them together to print stuff to the screen. <br><br>
+        You should also note that each code statment must end with a semicolon (<b class="red">;</b>).
+    </div>
+    <button onclick="location = '02-output.html'" class="botoes">Next ></button>
+</body>
+</html>

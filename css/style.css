@@ -1,0 +1,114 @@
+html {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: blanchedalmond;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: left;
+    padding-left: 10px;
+}
+
+hr {
+    border: 2px solid green;
+}
+
+p {
+    text-align: justify;
+    padding: 2px 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Caixa Exemplo / Resultados */
+.exemplo {
+    width: 96%;
+    margin: 0 auto;
+    background-color: lightgreen;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 1.7px 1px black;
+    padding: 6px 7px;
+}
+
+.exemplo h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    font-weight: 400;
+}
+
+.exemplo h4 {
+    letter-spacing: 1px;
+    word-break: break-all;
+    font-weight: 100;
+    border-left: 2px solid red;
+}
+
+.exemplo span {
+    font-weight: 700;
+}
+
+.exemplo pre {
+    border-left: 2px solid red;
+    letter-spacing: 1px;
+    word-break: break-all;
+    margin-left: -165px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.exemplo fieldset {
+    background-color: lightskyblue;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Resultados Exemplos */
+.resultado {
+    width: 96%;
+    background-color: black;
+    color: greenyellow;
+    margin: 6px auto;
+}
+
+.resultado h3 {
+    background-color: white;
+    text-align: center;
+    color: black;
+} 
+
+/* Letras Red */
+.red {
+    color: red;
+    background-color: aliceblue;
+    padding: 0;
+    border-radius: 10px;
+}
+
+/* Bloco de Nota */
+.nota {
+    width: 96%;
+    margin: 10px auto;
+    background-color: tomato;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+/* Botão Next */
+.botoes {
+    display: block;
+    margin: 5px auto;
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    font-size: 20px;
+    border-radius: 6px;
+}
