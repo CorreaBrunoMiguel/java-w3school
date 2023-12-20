@@ -64,6 +64,10 @@ a {
     font-weight: 700;
 }
 
+.exemplo p {
+    margin: 5px auto;
+}
+
 .exemplo fieldset {
     background-color: lightskyblue;
     border-radius: 10px;
