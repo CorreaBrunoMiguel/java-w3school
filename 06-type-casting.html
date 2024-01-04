@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Type Casting</title>
+    <link rel="stylesheet" href="css/newstyle.css">
+</head>
+<body>
+    <h1>Java Type Casting</h1>
+    <hr>
+    <h2>Java Type Casting</h2>
+    <p>
+        Type casting is when you assigned a valu of one primitive data type to another type. <br><br>
+        In Java, there are two types of casting:
+        <ul>
+            <li><b>Widening Casting:</b> (automatically) - converting a smaller type to a larger type size <br>
+            <b class="red">byte -> short ->char -> int -> long -> float -> double</b></li>
+            <li><b>Narrowing Casting</b> (manually) - converting a larger type to a smaller size type <br>
+            <b class="red">double -> float -> log -> int -> char -> short -> byte</b></li>
+        </ul>
+    </p>
+    <hr><h2>Widening Casting</h2>
+    <p>
+        Widening casting is done automatically when passing a smaller size type to a larger size type:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                public class Main { <br>
+                    &emsp;public static void main(String[] args) { <br>
+                        &emsp;&emsp;int myInt = 9; <br>
+                        &emsp;&emsp;double myDouble = myInt;  <br><br>
+                        &emsp;&emsp;System.out.printk(myInt); <br>
+                        &emsp;&emsp;System.out.printl(myDouble);<br>
+                    &emsp;} <br>
+                }
+            </code>
+        </fieldset>
+        <h3>Resultado</h3>
+        <fieldset class="resultado">
+            <h4>
+                9 <br>
+                9.0
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Narrowing Casting</h2>
+    <p>
+        Narrowing casting must be done manually by placing the type in parantheses in front of the value:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                public class Main { <br>
+                    &emsp;public static void main(String[] args) { <br>
+                        &emsp;&emsp;double myDouble = 9.78d; <br>
+                        &emsp;&emsp;dint myInt= (int) myDouble <br><br>
+                        &emsp;&emsp;System.out.printk(myInt); <br>
+                        &emsp;&emsp;System.out.printl(myDouble);<br>
+                    &emsp;} <br>
+                }
+            </code>
+        </fieldset>
+        <h3>Resultado</h3>
+        <fieldset class="resultado">
+            <h4>
+                9.78 <br>
+                9
+            </h4>
+        </fieldset>
+    </div>
+    <button onclick="location = '07-operators.html'" class="botoes">Next ></button>
+</body>
+</html>

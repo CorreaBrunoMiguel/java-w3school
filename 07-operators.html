@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Operators</title>
+    <link rel="stylesheet" href="css/newstyle.css">
+</head>
+<body>
+    <h1>Java Operators</h1>
+    <hr>
+    <h2>Java Operators</h2>
+    <p>
+        Operators are used to perform operations on variables and values. <br><br>
+        In the example below, we use the <b class="red">+</b> <b>operator</b> to add together two values:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                int x = 100 + 50;
+            </code>
+        </fieldset>
+    </div>
+    <p>
+        Although the <b class="red">+</b> operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable;
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                int sum1 = 100 + 50; <br>
+                int sum2 = sum1 + 250; <br>
+                int sum3 = sum1 + sum2;
+            </code>
+        </fieldset>
+    </div>
+    <p>
+        Java divides the operators into the following groups:
+        <ul>
+            <li>Arithmetic operators</li>
+            <li>Assignment operators</li>
+            <li>Comparison operators</li>
+            <li>Logical operators</li>
+            <li>Bitwise operators</li>
+        </ul>
+    </p>
+    <hr>
+    <h2>Arithmetic Operators</h2>
+    <p>
+        Arithmetic operators are used to perform common mathematical operations.
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>+</td>
+                <td>Addition</td>
+                <td>Adds together two values</td>
+                <td>x + y</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Subtraction</td>
+                <td>Subtracts one value from another</td>
+                <td>x - y</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Multiplication</td>
+                <td>Multiplies two values</td>
+                <td>x * y</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Division</td>
+                <td>Divides one values by another</td>
+                <td>x / y</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Modulus</td>
+                <td>Returns the division remainder</td>
+                <td>x % y</td>
+            </tr>
+            <tr>
+                <td>++</td>
+                <td>Increment</td>
+                <td>Increases the value of a variable by 1</td>
+                <td>++x</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>Decrement</td>
+                <td>Decreases the value of a variable by 1</td>
+                <td>--x</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Java Assignment Operators</h2>
+    <p>
+        Assignment operators are used to assign values to variables. <br><br>
+        In the example below, we use the <b>assignement</b> operator (<b class="red"> = </b>) to assign the value <b>10</b> to a variable called <b>x</b>:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                int x = 10;
+            </code>
+        </fieldset>
+    </div>
+    <p>
+        The <b>addition assignement</b> operator ( <b class="red">+=</b> ) adds a value to a variable:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                int x = 10; <br>
+                x += 5;
+            </code>
+        </fieldset>
+    </div>
+    <p>
+        A list of all assignement operators:
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Example</th>
+                <th>Same As</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>=</td>
+                <td>x = 5</td>
+                <td>x = 5</td>
+            </tr>
+            <tr>
+                <td>+=</td>
+                <td>x += 3</td>
+                <td>x = x + 3</td>
+            </tr>
+            <tr>
+                <td>-=</td>
+                <td>x -= 3</td>
+                <td>x = x - 3</td>
+            </tr>
+            <tr>
+                <td>*=</td>
+                <td>x *= 3</td>
+                <td>x = x * 3</td>
+            </tr>
+            <tr>
+                <td>/=</td>
+                <td>x /= 3</td>
+                <td>x = x / 3</td>
+            </tr>
+            <tr>
+                <td>%=</td>
+                <td>x %= 3</td>
+                <td>x = x % 3</td>
+            </tr>
+            <tr>
+                <td>&=</td>
+                <td>x &= 3</td>
+                <td>x = x & 3</td>
+            </tr>
+            <tr>
+                <td>|=</td>
+                <td>x |= 3</td>
+                <td>x = x | 3</td>
+            </tr>
+            <tr>
+                <td>^=</td>
+                <td>x ^= 3</td>
+                <td>x = x ^ 3</td>
+            </tr>
+            <tr>
+                <td>>>=</td>
+                <td>x >>= 3</td>
+                <td>x = x >> 3</td>
+            </tr>
+            <tr>
+                <td><<=</td>
+                <td>x <<= 3</td>
+                <td>x = x << 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Java Comparison Operators</h2>
+    <p>
+        Comparison operators are used to compare two values (or variables). This is important in prohramming, because it helps us to find answers an make decisions. <br><br>
+        The return value of a comparison is either <b class="red">true</b> or <b class="red">false</b>. These values are known as <i>Boolean values</i>. <br><br>
+        In the following example, we use the <b>greater than</b> operator ( <b class="red">></b> ) to find out if 5 is greater tha 3:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                int x = 5; <br>
+                int y = 3; <br>
+                System.out.println(x > 3);
+            </code>
+        </fieldset>
+        <h3>Resultado</h3>
+        <fieldset class="resultado">
+            <h4>
+                true
+            </h4>
+        </fieldset>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Name</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>==</td>
+                <td>Equal to</td>
+                <td>x == y</td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>Not equal</td>
+                <td>x != y</td>
+            </tr>
+            <tr>
+                <td>></td>
+                <td>Greater than</td>
+                <td>x > y</td>
+            </tr>
+            <tr>
+                <td><</td>
+                <td>Less than</td>
+                <td>x < y</td>
+            </tr>
+            <tr>
+                <td>>=</td>
+                <td>Greater than or equal to</td>
+                <td>x >= y</td>
+            </tr>
+            <tr>
+                <td><=</td>
+                <td>Less than or equal to</td>
+                <td>x <= y</td>
+            </tr>
+        </tbody> <br>
+    </table>
+</body>
+</html>
