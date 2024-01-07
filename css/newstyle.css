@@ -79,6 +79,12 @@ tr:nth-child(even) {
     margin: 5px;
 }
 
+.exemplo p {
+    padding: 5px 10px;
+    background-color: aliceblue;
+
+}
+
 .exemplo fieldset{
     width: 94%;
     margin: 0 auto;
@@ -129,4 +135,13 @@ tr:nth-child(even) {
     background-color: green;
     font-size: 20px;
     border-radius: 6px;
+}
+
+/* caixa de aviso */
+.aviso {
+    width: 96%;
+    margin: 10px auto;
+    background-color: plum;
+    padding: 1px 8px;
+    border-radius: 5px;
 }
