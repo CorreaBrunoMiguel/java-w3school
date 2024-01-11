@@ -100,9 +100,10 @@ tr:nth-child(even) {
 }
 
 .resultado h4{
+    text-align: left;
     color: greenyellow;
     border-left: 2px solid red;
-    padding: 1px 5px;
+    padding: 0 5px;
     margin: 0 5px;
 }
 .exemplo code {

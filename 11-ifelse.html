@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java If ... Else</title>
+    <link rel="stylesheet" href="css/newstyle.css">
+</head>
+<body>
+    <h1>Java If ... Else</h1>
+    <hr>
+    <h2>Java Conditions and If Statements</h2>
+    <p>
+        You already know that Java supports the usual logical conditions from mathematics:
+        <ul>
+            <li>Less than: <b class="red">a < b</b></li>
+            <li>Less than or equal to: <b class="red">a <= b</b></li>
+            <li>Greater than: <b class="red">a > b</b></li>
+            <li>Greater than or equal to: <b class="red">a >= b</b></li>
+            <li>Equal to: <b class="red">a == b</b></li>
+            <li>Not Equal to: <b class="red">a != b</b></li>
+        </ul>
+        You can use these conditions to perform different actions for different decisions. <br><br>
+        Java can use these conditions to perform different actions for different decisions. <br><br>
+        Java has the following conditional statements:
+        <ul>
+            <li>Use <b class="red">if</b></li> to specify a block of code to be executed, if a specified condition is true
+            <li>Use <b class="red">else</b> to specify a block of code to be executed, if the same condition is false</li>
+            <li>Use <b class="red">else if</b> to specify a new condition to test, if the first condition is false</li>
+            <li>Use <b class="red">switch</b> to specify many alternative blocks of code to be executed</li>
+        </ul>
+    </p>
+    <hr>
+    <h2>The if Statement</h2>
+    <p>
+        Use the <b class="red">if</b> statement to specify a block of Java code to be executed if a condition is <b class="red">true</b>.
+    </p>
+    <div class="exemplo">
+        <h3>Syntax</h3>
+        <fieldset>
+            <code>
+                if (condition) { <br>
+                    &emsp; // block of code to be executed if the condition is true <br>
+                }
+            </code>
+        </fieldset>
+    </div>
+    <div class="aviso">
+        if always is in lowercase letters. Uppercase letters ( <b class="red">If - IF</b> ) will generate an error.
+    </div>
+    <p>
+        In the example below, we test two values to find out if 20 is greater than 18. If the condition is <b class="red">true</b>, print some text:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                if (20 > 18) { <br>
+                    &emsp;System.out.println("20 is greater than 18"); <br>
+                }
+            </code>
+        </fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                20 is greater than 18
+            </h4>
+        </fieldset>
+    </div>
+    <p>
+        We can also test variables:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                int x = 20; <br>
+                int y = 18;  <br><br>
+                if (x > y) { <br>
+                    &emsp;System.out.println("x is greater than y"); <br>
+                }
+            </code>
+        </fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                x is greater than y
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>The else Statement</h2>
+    <p>
+        Use the <b class="red">else</b> statement to specify a block to be executed if the condition is <b class="red">false</b>.
+    </p>
+    <div class="exemplo">
+        <h3>Syntax</h3>
+        <fieldset>
+            <code>
+                if (condition) { <br>
+                    &emsp;// block of code to be executed if the condition is true <br>
+                } else { <br>
+                    &emsp;// block of coe to be executed if the condition is false
+                }
+            </code>
+        </fieldset>
+    </div>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                int time = 20; <br><br>
+
+                if (time < 18) { <br>
+                    &emsp;System.out.println("Good day."); <br>
+                } else { <br>
+                    &emsp;System.out.println("Good evening."); <br>
+                }
+            </code>
+        </fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                Good evening.
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>The else if Statement</h2>
+    <p>
+        Use the <b class="red">else if</b> statement to specify a new condition if the first condition is <b class="red">false</b>.
+    </p>
+    <div class="exemplo">
+        <h3>Syntax</h3>
+        <fieldset>
+            <code>
+                if (condition1) { <br>
+                    &emsp;// block of code to be executed if the condition1 is true <br>
+                } else if (condition2) { <br>
+                    &emsp;// block of code to be executed if the condition1 is false and condition2 is true <br>
+                } else { <br>
+                    &emsp;// block of code to be executed if the condition1 is false and condition2 is false <br>
+                }
+            </code>
+        </fieldset>
+    </div>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                int time = 22; <br><br>
+
+                if (time < 10) { <br>
+                    &emsp;System.out.println("Good morning."); <br>
+                } else  if (time < 18) { <br>
+                    &emsp;System.out.println("Good day."); <br>
+                } else { <br>
+                    &emsp;System.out.println("Good evening."); <br>
+                }
+            </code>
+        </fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                Good evening.
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h1>Java Short Hand if ... Else (Ternary Operator)</h1>
+    <hr>
+    <h2>Short Hand If ... Else</h2>
+    <p>
+        There is also a short-hand if else, which is know as the <b>ternary operator</b> because it consists of three operands. <br><br>
+        It can be used ro replace multiple lines of code with a single line, and is most often used to replace simple if else statements:
+    </p>
+    <div class="exemplo">
+        <h3>Syntax</h3>
+        <fieldset>
+            <code>
+                variable = (condition) ? expressionTrue : expressionFalse;
+            </code>
+        </fieldset>
+    </div>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                int time = 22; <br><br>
+
+                String result = (time < 18) ? "Good day." : "Goof evening.";
+            </code>
+        </fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                Good evening.
+            </h4>
+        </fieldset>
+    </div>
+    <button onclick="location = '12-switch.html'" class="botoes">Next ></button>
+</body>
+</html>
