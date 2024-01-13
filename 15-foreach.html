@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java For Each Loop</title>
+    <link rel="stylesheet" href="css/newstyle.css">
+</head>
+<body>
+    <h1>Java For Each Loop</h1>
+    <hr>
+    <h2>For-Each Loop</h2>
+    <p>
+        There is also a "<b>for-each</b>" loop, which is used exclusively to loop through elements in an <b>array</b>:
+    </p>
+    <div class="exemplo">
+        <h3>Syntax</h3>
+        <fieldset>
+            <code>
+                for (type variableName : arrayName) { <br>
+                    &emsp;// code block to be executed <br>
+                }
+            </code>
+        </fieldset>
+    </div>
+    <p>
+        The following example outputs all elements in the <b>cars</b> array, using a <b>for-each</b> loop:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; <br><br>
+            for (String i : cars) { <br>
+                &emsp;System.out.println(i); <br>
+            }
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                Volvo <br>
+                BMW <br>
+                Ford <br>
+                Mazda
+            </h4>
+        </fieldset>
+    </div>
+    <button onclick="location = '16-break-continue.html'" class="botoes">Next ></button>
+</body>
+</html>

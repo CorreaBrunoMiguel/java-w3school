@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Arrays</title>
+    <link rel="stylesheet" href="css/newstyle.css">
+</head>
+<body>
+    <h1>Java Arrays</h1>
+    <hr>
+    <h2>Java Arrays</h2>
+    <p>
+        Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value. <br><br>
+        To declare an array, define the variable type with <b>square brackets</b>:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <code>
+                String[] cars;
+            </code>
+        </fieldset>
+    </div>
+    <p>
+        We have now declared a variable that holds an arrays of strings. To insert values to it, you can place the values in a comma-separated list, inside curly braves:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <code>
+                String[] cars = {"Volvo", "BMW", "Ford"};
+            </code>
+        </fieldset>
+    </div>
+    <p>
+        To creare an array of integers, you could write:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <code>
+                int[] myNums = {10, 20, 30, 40};
+            </code>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Access the Elements of an Array</h2>
+    <p>
+        You can access an array element by referering to the index number. 
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            String[] cars = {"Volvo", "BMW", 'Ford', "Mazda", "Fiat"}; <br>
+            System.out.println(cars[0]);
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+               Volvo
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Change an Array Element</h2>
+    <p>
+        To change the value of a specific element, refer to the index number:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            String[] cars = {"Volvo", "BMW", 'Ford', "Mazda", "Fiat"}; <br>
+            cars[0] = "Nissan"; <br>
+            System.out.println(cars[0]);
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                Nissan 
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Array Length</h2>
+    <p>
+        To find out how many elements an array has, use the <b class="red">length</b> property:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            String[] cars = {"Volvo", "BMW", 'Ford', "Mazda", "Fiat"}; <br>
+            System.out.println(cars.length);
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                5
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h1>Java Arrays Loop</h1>
+    <hr>
+    <h2>Loop Trough an Array</h2>
+    <p>
+        You can loop trough the array elements with the <b class="red">for</b> loop, and use the <b class="red">length</b> property to specify how many times the loop should run. <br><br>
+    </p> 
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            String[] cars = {"Volvo", "BMW", 'Ford', "Mazda", "Fiat"}; <br>
+            System.out.println(cars.length);
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                5
+            </h4>
+        </fieldset>
+    </div>
+</body>
+</html>

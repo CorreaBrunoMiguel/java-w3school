@@ -95,8 +95,9 @@ tr:nth-child(even) {
 }
 
 .exemplo .resultado{
+    width: 94%;
     background-color: black;
-    margin: 1px;
+    margin: 0 auto;
 }
 
 .resultado h4{

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java For Loop</title>
+    <link rel="stylesheet" href="css/newstyle.css">
+</head>
+<body>
+    <h1>Java For Loop</h1>
+    <hr>
+    <h2>Java For Loop</h2>
+    <p>
+        When you know exactly how many times you want to loop through a block of code, use the <b class="red">for</b> loop instead of a <b class="red">while</b> loop:
+    </p>
+    <div class="exemplo">
+        <h3>Synntax</h3>
+        <fieldset><code>
+            for (statement 1; statement 2; statement 3) { <br>
+                &emsp;// code of block to be executed <br>
+            }
+        </code></fieldset>
+    </div>
+    <p>
+        <b>Stetement 1 </b>is executed (one time) before the executionof the block. <br><br>
+        <b>Statement 2</b> defines the condition for executing the block code. <br><br>
+        <b>Statement 3</b> is executed (every time) after the code block has been executed. 
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            for (int i = 0; i < 5; i++) { <br>
+                &emsp;System.out.println(i); <br>
+            }
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                0 <br>
+                1 <br>
+                2 <br>
+                3 <br>
+                4
+            </h4>
+        </fielset>
+    </div>
+    <h3>Another Example</h3>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            for (int i = 0; i <= 10; i += 2) { <br>
+                System.out.println(i); <br>
+            }
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                0 <br>
+                2 <br>
+                4 <br>
+                6 <br>
+                8 <br>
+                10
+            </h4>
+        </fielset>
+    </div>
+    <hr>
+    <h2>Nested Loops</h2>
+    <p>
+        It is also possible to place a loop inside another loop. This is called a <b>nested loop</b>. <br><br>
+        The "inner loop" will be executed one time for each iteration of the "outer loop":
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            // Outer loop <br>
+            for (int i = 1; i <= 2; i++ ) { <br>
+                &emsp;System.out.println("Outer: " + i); <br>
+                <br>
+                &emsp;//Inner loop <br>
+                &emsp;for (int j = 1; j <= 3; j++) { <br>
+                    &emsp;&emsp;System.out.println("Inner: " + j); <br>
+                &emsp;} <br>
+            }
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                Outer: 1 <br>
+                &emsp;Inner: 1 <br>
+                &emsp;Inner: 2 <br>
+                &emsp;Inner: 3 <br>
+                Outer: 2 <br>
+                &emsp;Inner: 1 <br>
+                &emsp;Inner: 2 <br>
+                &emsp;Inner: 3 <br>
+            </h4>
+        </fielset>
+    </div>
+    <button onclick="location = '15-foreach.html'" class="botoes">Next ></button>
+</body>
+</html>

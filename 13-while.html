@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java While Loop</title>
+    <link rel="stylesheet" href="css/newstyle.css">
+</head>
+<body>
+    <h1>Java While Loop</h1>
+    <hr>
+    <h2>Loops</h2>
+    <p>
+        Loops can execute a block of code as long as a specified condition is reached. <br><br>
+        Loops are handy because they save time, reduce errors, and they make code more readable.
+    </p>
+    <hr>
+    <h2>Java While Loop</h2>
+    <p>
+        The <b class="red">while</b> loop loops through a block of codes as long as a specified condition is <b class="red">true</b>:
+    </p>
+    <div class="exemplo">
+        <h3>Synntax</h3>
+        <fieldset><code>
+            while (condition) { <br>
+                &emsp;// code block to be executed <br>
+            }
+        </code></fieldset>
+    </div>
+    <p>
+        In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            int i = 0;
+            while (i < 5) { <br>
+                &emsp;System.out.println(i);<br>
+                &emsp;i++; <br>
+            }
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                0 <br>
+                1 <br>
+                2 <br>
+                3 <br>
+                4
+            </h4>
+        </fielset>
+    </div>
+    <div class="nota">
+        <b>Note:</b> Do not forget to increase the variable uses in the condition, otherwise the loop will never end!
+    </div>
+    <hr>
+    <h2>The Do/While Loop</h2>
+    <p>
+        The <b class="red">do/while</b> loop is a variant of the <b class="red">while</b> loop. This loop will execute the code block once, befre checking if the condition is true, then it will repeat the loop as long as the condition is true.
+    </p>
+    <div class="exemplo">
+        <h3>Synntax</h3>
+        <fieldset><code>
+            do { <br>
+                &emsp;// code block to be executed <br>
+            } while (condition)
+            
+        </code></fieldset>
+    </div>
+    <p>
+        The example below uses a <b class="red">do/while</b> loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            int i = 0; <br><br>
+            do { <br>
+                System.out.println(i); <br>
+                i++; <br>
+            } while (i < 5);
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                0 <br>
+                1 <br>
+                2 <br>
+                3 <br>
+                4 <br>
+                5
+            </h4>
+        </fielset>
+    </div>
+    <button onclick="location = '14-for.html'" class="botoes">Next ></button>
+</body>
+</html>

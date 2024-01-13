@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Java Break and Continue</title>
+    <link rel="stylesheet" href="css/newstyle.css">
+</head>
+<body>
+    <h1>Java Break and Continue</h1>
+    <hr>
+    <h2>Java Break</h2>
+    <p>
+        You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a <b class="red">switch</b> statement. <br><br>
+        The <b class="red">break</b> statement can also be used to jump out a <b>loop</b>.
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            for (int i = 0; i < 10; i++) { <br>
+                &emsp;if (i == 4) { <br>
+                    &emsp;&emsp;break; <br>
+                &emsp;} <br>
+                &emsp;System.out.println(i); <br>
+            }
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                0 <br>
+                1 <br>
+                2 <br>
+                3 
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Java Continue</h2>
+    <p>
+        The <b class="red">continue</b> statement breaks one iteration (in the loop), is a specified condition occurs, and continue with the next iteration in the loop. 
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            for (int i = 0; i <= 5; i++) { <br>
+                &emsp;if (i == 3) { <br>
+                    &emsp;&emsp;continue; <br>
+                &emsp;} <br>
+                &emsp;System.out.println(i); <br>
+            }
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                0 <br>
+                1 <br>
+                2 <br>
+                3 <br>
+                5
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Break and Continue in While Loop</h2>
+    <p>
+        You can also use <b class="red">break</b> and <b class="red">continue</b> in while loops:
+    </p>
+    <div class="exemplo">
+        <h3>Break Example</h3>
+        <fieldset><code>
+            int i = 0; <br>
+            <br>
+            while (i < 6) { <br>
+                &emsp;System.out.println(i); <br>
+                &emsp;i++; <br>
+                &emsp;if (i == 3) { <br>
+                    &emsp;&emsp;break; <br>
+                &emsp;} <br>
+            }
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                0 <br>
+                1 <br>
+                2 <br>
+                3 
+            </h4>
+        </fieldset>
+    </div>
+    <div class="exemplo">
+        <h3>Continue Example</h3>
+        <fieldset><code>
+            int i = 0; <br>
+            <br>
+            while (i < 6) { <br>
+                &emsp;if (i == 3) { <br>
+                    &emsp;&emsp;i++; <br>
+                    &emsp;&emsp;continue; <br>
+                &emsp;} <br>
+                &emsp;System.out.println(i); <br>
+                &emsp;i++; <br>
+            }
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                0 <br>
+                1 <br>
+                2 <br>
+                4 <br>
+                5 
+            </h4>
+        </fieldset>
+    </div>
+    <button onclick="location = '17-arrays.html'" class="botoes">Next ></button>
+</body>
+</html>
