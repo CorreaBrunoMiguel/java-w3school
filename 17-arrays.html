@@ -106,13 +106,136 @@
     <div class="exemplo">
         <h3>Example</h3>
         <fieldset><code>
-            String[] cars = {"Volvo", "BMW", 'Ford', "Mazda", "Fiat"}; <br>
-            System.out.println(cars.length);
+            String[] cars = {"Volvo", "BMW", 'Ford', "Mazda", "Fiat"}; <br><br>
+
+            for (int i = 0; i < cars.length; i++) { <br>
+                &emsp;system.out.println(cars[i]); <br>
+            }
         </code></fieldset>
         <h3>Result</h3>
         <fieldset class="resultado">
             <h4>
-                5
+                Volvo <br>
+                BMW <br>
+                Ford <br>
+                Mazda <br>
+                Fiat
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Loop Trough an Array with For-Each</h2>
+    <p>
+        There is also a <b>for-each</b> loop. which is used exclusively to loop trough elements in arrays:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            String[] cars = {"Volvo", "BMW", 'Ford', "Mazda", "Fiat"}; <br><br>
+
+            for (String i : cars) { <br>
+                &emsp;system.out.println(cars[i]); <br>
+            }
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                Volvo <br>
+                BMW <br>
+                Ford <br>
+                Mazda <br>
+                Fiat
+            </h4>
+        </fieldset>
+    </div>
+    <p>
+        The example above can be read like this: <b>for each</b> <b class="red">String</b> element (called i - as in index) in cars, print out the value of i. <br><br>
+        If you compare the <b class="red">for</b> loop and <b>for-each</b> loop, you will see that the <b>for-each</b> method is easier to write, it does not require a counter (using the length property), and it is more readable.
+    </p>
+    <hr>
+    <h1>Java Multi-Dimensional Arrays</h1>
+    <hr>
+    <h2>Multidimensional Arrays</h2>
+    <p>
+        A multidimensional array is an array of arrays. <br><br>
+        Multidimensional array are useful when you want to store data as a tabular form, like table with rows and columns. <br><br>
+        To create a two-dimensional array, add each array within its own set of <b>curly braces</b>:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            int[][] myNumbers = {{1, 2, 3, 4}, {5, 6, 7}};
+        </code></fieldset>
+    </div>
+    <p>
+        <b>myNumbers</b> is now an array with two arrays as its elements.
+    </p>
+    <hr>
+    <h2>Access Elements</h2>
+    <p>
+        To access the elements of the <b>myNumbers</b> array, specify two indexes: one for the array, and one for the element inside that array. This example accesses the third element (2) in the second array (1) of myNumbers:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            int[][] myNumbers = {{1, 2, 3, 4}, {5, 6, 7}}; <br>
+            System.out.println(myNumbers[1][2]);
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                7
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Change Elements Values</h2>
+    <p>
+        You can also change the value of an element:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            int[][] myNumbers = {{1, 2, 3, 4}, {5, 6, 7}}; <br>
+            myNumber[1][2] = 9;
+            System.out.println(myNumbers[1][2]);
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                9
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Loop Trough a Multi-Dimensional Array</h2>
+    <p>
+        We can also use <b class="red">for </b>loop inside another <b class="red">for </b> loop to get the element of a two-dimensional array (we still have to point to the two indexes):
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset><code>
+            public class Main { <br>
+                &emsp;public static void main (String[] args) { <br>
+                    &emsp;&emsp;int[][] myNumbers = {{1, 2, 3, 4}, {5, 6, 7}}; <br>
+                    &emsp;&emsp;for (int i = 0; i < myNumbers.length; ++i) { <br>
+                        &emsp;&emsp;&emsp;for (int j = 0; j < myNumbers[i].length; ++j) { <br>
+                            &emsp;&emsp;&emsp;&emsp;System.out.println(myNumbers[i][j]); <br> 
+                            &emsp;&emsp;&emsp;} <br>
+                            &emsp;&emsp;} <br>
+                &emsp;} <br>
+            }
+        </code></fieldset>
+        <h3>Result</h3>
+        <fieldset class="resultado">
+            <h4>
+                1 <br>
+                2 <br>
+                3 <br>
+                4 <br>
+                5 <br>
+                6 <br>
+                7 
             </h4>
         </fieldset>
     </div>
